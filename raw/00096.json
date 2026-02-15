@@ -1,0 +1,5794 @@
+[
+  {
+    "op": "00 00",
+    "offset": 0,
+    "index": 0,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 2,
+    "index": 1,
+    "value": [
+      "u32:305"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 10,
+    "index": 2,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 11,
+    "index": 3,
+    "value": [
+      "u32:10316"
+    ]
+  },
+  {
+    "op": "20",
+    "offset": 16,
+    "index": 4,
+    "value": []
+  },
+  {
+    "op": "01",
+    "offset": 17,
+    "index": 5,
+    "value": []
+  },
+  {
+    "op": "00 02",
+    "offset": 18,
+    "index": 6,
+    "value": []
+  },
+  {
+    "op": "0E 00",
+    "offset": 20,
+    "index": 7,
+    "value": []
+  },
+  {
+    "op": "FF",
+    "offset": 22,
+    "index": 8,
+    "value": []
+  },
+  {
+    "op": "00 05",
+    "offset": 23,
+    "index": 9,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 29,
+    "index": 10,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 30,
+    "index": 11,
+    "value": [
+      "u32:5662"
+    ]
+  },
+  {
+    "op": "00 00",
+    "offset": 35,
+    "index": 12,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 37,
+    "index": 13,
+    "value": [
+      "u32:36"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 45,
+    "index": 14,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 46,
+    "index": 15,
+    "value": []
+  },
+  {
+    "op": "11 FF 00 05",
+    "offset": 48,
+    "index": 16,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 56,
+    "index": 17,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 57,
+    "index": 18,
+    "value": [
+      "u32:10221"
+    ]
+  },
+  {
+    "op": "00 02 07 00 FF 00",
+    "offset": 62,
+    "index": 19,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 68,
+    "index": 20,
+    "value": [
+      "u32:10"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 73,
+    "index": 21,
+    "value": []
+  },
+  {
+    "op": "00 02",
+    "offset": 74,
+    "index": 22,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 76,
+    "index": 23,
+    "value": [
+      "u8:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 78,
+    "index": 24,
+    "value": []
+  },
+  {
+    "op": "00 05",
+    "offset": 79,
+    "index": 25,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 85,
+    "index": 26,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 86,
+    "index": 27,
+    "value": [
+      "u32:6442"
+    ]
+  },
+  {
+    "op": "21",
+    "offset": 91,
+    "index": 28,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 92,
+    "index": 29,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 94,
+    "index": 30,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 102,
+    "index": 31,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 103,
+    "index": 32,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 108,
+    "index": 33,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 109,
+    "index": 34,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "09 00",
+    "offset": 111,
+    "index": 35,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 113,
+    "index": 36,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00 00",
+    "offset": 115,
+    "index": 37,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 117,
+    "index": 38,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 119,
+    "index": 39,
+    "value": [
+      "（"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 123,
+    "index": 40,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 125,
+    "index": 41,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 129,
+    "index": 42,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 131,
+    "index": 43,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 135,
+    "index": 44,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 137,
+    "index": 45,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 141,
+    "index": 46,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 143,
+    "index": 47,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 147,
+    "index": 48,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 149,
+    "index": 49,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 155,
+    "index": 50,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 157,
+    "index": 51,
+    "value": [
+      "）"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 161,
+    "index": 52,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 162,
+    "index": 53,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 164,
+    "index": 54,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 165,
+    "index": 55,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 167,
+    "index": 56,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 169,
+    "index": 57,
+    "value": [
+      "（"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 173,
+    "index": 58,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 175,
+    "index": 59,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 179,
+    "index": 60,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 181,
+    "index": 61,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 185,
+    "index": 62,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 187,
+    "index": 63,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 191,
+    "index": 64,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 193,
+    "index": 65,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 197,
+    "index": 66,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 199,
+    "index": 67,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 203,
+    "index": 68,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 205,
+    "index": 69,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 209,
+    "index": 70,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 211,
+    "index": 71,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 215,
+    "index": 72,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 217,
+    "index": 73,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 223,
+    "index": 74,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 225,
+    "index": 75,
+    "value": [
+      "）"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 229,
+    "index": 76,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 230,
+    "index": 77,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 232,
+    "index": 78,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 233,
+    "index": 79,
+    "value": [
+      "　浅い光を網膜に感じながら"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 261,
+    "index": 80,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 263,
+    "index": 81,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 267,
+    "index": 82,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 269,
+    "index": 83,
+    "value": [
+      "うっすらと目を開ける"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 291,
+    "index": 84,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 293,
+    "index": 85,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 297,
+    "index": 86,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 299,
+    "index": 87,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 301,
+    "index": 88,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 302,
+    "index": 89,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 304,
+    "index": 90,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 305,
+    "index": 91,
+    "value": [
+      "u32:10284"
+    ]
+  },
+  {
+    "op": "00 00",
+    "offset": 310,
+    "index": 92,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 312,
+    "index": 93,
+    "value": [
+      "u32:9"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 320,
+    "index": 94,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 321,
+    "index": 95,
+    "value": [
+      "u32:10172"
+    ]
+  },
+  {
+    "op": "21",
+    "offset": 326,
+    "index": 96,
+    "value": []
+  },
+  {
+    "op": "00 02 05 00 FF 00",
+    "offset": 327,
+    "index": 97,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 333,
+    "index": 98,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 338,
+    "index": 99,
+    "value": []
+  },
+  {
+    "op": "00 02 06 00 FF 00",
+    "offset": 339,
+    "index": 100,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 345,
+    "index": 101,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 350,
+    "index": 102,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 351,
+    "index": 103,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 353,
+    "index": 104,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 361,
+    "index": 105,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 362,
+    "index": 106,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 367,
+    "index": 107,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 368,
+    "index": 108,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 370,
+    "index": 109,
+    "value": [
+      "「"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 374,
+    "index": 110,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 376,
+    "index": 111,
+    "value": [
+      "朝"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 380,
+    "index": 112,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 382,
+    "index": 113,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 386,
+    "index": 114,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 388,
+    "index": 115,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 394,
+    "index": 116,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 396,
+    "index": 117,
+    "value": [
+      "なのか」"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 406,
+    "index": 118,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 407,
+    "index": 119,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 409,
+    "index": 120,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 410,
+    "index": 121,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 411,
+    "index": 122,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 413,
+    "index": 123,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 421,
+    "index": 124,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 422,
+    "index": 125,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 427,
+    "index": 126,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 428,
+    "index": 127,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "09 00",
+    "offset": 430,
+    "index": 128,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 432,
+    "index": 129,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 434,
+    "index": 130,
+    "value": [
+      "　焦点の定まらない世界"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 458,
+    "index": 131,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 460,
+    "index": 132,
+    "value": [
+      "を"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 464,
+    "index": 133,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 466,
+    "index": 134,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 470,
+    "index": 135,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 472,
+    "index": 136,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 478,
+    "index": 137,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 480,
+    "index": 138,
+    "value": [
+      "ぼうっと"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 490,
+    "index": 139,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 492,
+    "index": 140,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 496,
+    "index": 141,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 498,
+    "index": 142,
+    "value": [
+      "眼球だけを"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 510,
+    "index": 143,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 511,
+    "index": 144,
+    "value": [
+      "動かしながら見渡す"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 531,
+    "index": 145,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 533,
+    "index": 146,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 537,
+    "index": 147,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 539,
+    "index": 148,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 541,
+    "index": 149,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 542,
+    "index": 150,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 544,
+    "index": 151,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 545,
+    "index": 152,
+    "value": [
+      "（間違いない"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 559,
+    "index": 153,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 561,
+    "index": 154,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 565,
+    "index": 155,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 567,
+    "index": 156,
+    "value": [
+      "俺の泊まっている客間"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 589,
+    "index": 157,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 591,
+    "index": 158,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 595,
+    "index": 159,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00 00",
+    "offset": 597,
+    "index": 160,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 599,
+    "index": 161,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 601,
+    "index": 162,
+    "value": [
+      "だ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 605,
+    "index": 163,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 607,
+    "index": 164,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 611,
+    "index": 165,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 613,
+    "index": 166,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 619,
+    "index": 167,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 621,
+    "index": 168,
+    "value": [
+      "）"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 625,
+    "index": 169,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 626,
+    "index": 170,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 628,
+    "index": 171,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 629,
+    "index": 172,
+    "value": []
+  },
+  {
+    "op": "00 02 05 00 FF 00",
+    "offset": 630,
+    "index": 173,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 636,
+    "index": 174,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 641,
+    "index": 175,
+    "value": []
+  },
+  {
+    "op": "00 02 06 00 FF 00",
+    "offset": 642,
+    "index": 176,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 648,
+    "index": 177,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 653,
+    "index": 178,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 654,
+    "index": 179,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 656,
+    "index": 180,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 664,
+    "index": 181,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 665,
+    "index": 182,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 670,
+    "index": 183,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 671,
+    "index": 184,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 673,
+    "index": 185,
+    "value": [
+      "「は"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 679,
+    "index": 186,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 681,
+    "index": 187,
+    "value": [
+      "ぁ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 685,
+    "index": 188,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 687,
+    "index": 189,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 691,
+    "index": 190,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 693,
+    "index": 191,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 697,
+    "index": 192,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 699,
+    "index": 193,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 703,
+    "index": 194,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 705,
+    "index": 195,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 709,
+    "index": 196,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 711,
+    "index": 197,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 717,
+    "index": 198,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 719,
+    "index": 199,
+    "value": [
+      "」"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 723,
+    "index": 200,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 724,
+    "index": 201,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 726,
+    "index": 202,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 727,
+    "index": 203,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 728,
+    "index": 204,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 730,
+    "index": 205,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 738,
+    "index": 206,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 739,
+    "index": 207,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 744,
+    "index": 208,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 745,
+    "index": 209,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "09 00",
+    "offset": 747,
+    "index": 210,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 749,
+    "index": 211,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 751,
+    "index": 212,
+    "value": [
+      "　仰向けに寝転がったまま"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 777,
+    "index": 213,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 779,
+    "index": 214,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 783,
+    "index": 215,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 785,
+    "index": 216,
+    "value": [
+      "大きくため息を付く"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 805,
+    "index": 217,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 807,
+    "index": 218,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 811,
+    "index": 219,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 813,
+    "index": 220,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 815,
+    "index": 221,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 816,
+    "index": 222,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 818,
+    "index": 223,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 819,
+    "index": 224,
+    "value": [
+      "　それを何度か繰り返してゆくうちに"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 855,
+    "index": 225,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 857,
+    "index": 226,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 861,
+    "index": 227,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 863,
+    "index": 228,
+    "value": [
+      "少しづつ身体中の"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 881,
+    "index": 229,
+    "value": [
+      "『意識』が蘇ってくるのが分かる"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 913,
+    "index": 230,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 915,
+    "index": 231,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 919,
+    "index": 232,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 921,
+    "index": 233,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 923,
+    "index": 234,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 924,
+    "index": 235,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 926,
+    "index": 236,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 927,
+    "index": 237,
+    "value": []
+  },
+  {
+    "op": "00 02 05 00 FF 00",
+    "offset": 928,
+    "index": 238,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 934,
+    "index": 239,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 939,
+    "index": 240,
+    "value": []
+  },
+  {
+    "op": "00 02 06 00 FF 00",
+    "offset": 940,
+    "index": 241,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 946,
+    "index": 242,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 951,
+    "index": 243,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 952,
+    "index": 244,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 954,
+    "index": 245,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 962,
+    "index": 246,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 963,
+    "index": 247,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 968,
+    "index": 248,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 969,
+    "index": 249,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 971,
+    "index": 250,
+    "value": [
+      "「櫻"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 977,
+    "index": 251,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 979,
+    "index": 252,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 983,
+    "index": 253,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 985,
+    "index": 254,
+    "value": [
+      "さ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 989,
+    "index": 255,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 991,
+    "index": 256,
+    "value": [
+      "ん"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 995,
+    "index": 257,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 997,
+    "index": 258,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1001,
+    "index": 259,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1003,
+    "index": 260,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1009,
+    "index": 261,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1011,
+    "index": 262,
+    "value": [
+      "」"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 1015,
+    "index": 263,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1016,
+    "index": 264,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1018,
+    "index": 265,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 1019,
+    "index": 266,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 1020,
+    "index": 267,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 1022,
+    "index": 268,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1030,
+    "index": 269,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 1031,
+    "index": 270,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 1036,
+    "index": 271,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1037,
+    "index": 272,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "09 00",
+    "offset": 1039,
+    "index": 273,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1041,
+    "index": 274,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1043,
+    "index": 275,
+    "value": [
+      "　昨夜"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1051,
+    "index": 276,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1053,
+    "index": 277,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1057,
+    "index": 278,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1059,
+    "index": 279,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 1061,
+    "index": 280,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 1062,
+    "index": 281,
+    "value": [
+      "　何処からともなく現れた幽霊"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1092,
+    "index": 282,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1094,
+    "index": 283,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1098,
+    "index": 284,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1100,
+    "index": 285,
+    "value": [
+      "櫻との情事"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1112,
+    "index": 286,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1114,
+    "index": 287,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1118,
+    "index": 288,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1120,
+    "index": 289,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 1122,
+    "index": 290,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1123,
+    "index": 291,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 1125,
+    "index": 292,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 1126,
+    "index": 293,
+    "value": [
+      "　い"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1132,
+    "index": 294,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1134,
+    "index": 295,
+    "value": [
+      "や"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1138,
+    "index": 296,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1140,
+    "index": 297,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1144,
+    "index": 298,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1146,
+    "index": 299,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1152,
+    "index": 300,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1154,
+    "index": 301,
+    "value": [
+      "一方的な行為"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1168,
+    "index": 302,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1170,
+    "index": 303,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1174,
+    "index": 304,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1176,
+    "index": 305,
+    "value": [
+      "と言うべきか"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1190,
+    "index": 306,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1192,
+    "index": 307,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1196,
+    "index": 308,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1198,
+    "index": 309,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 1200,
+    "index": 310,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 1201,
+    "index": 311,
+    "value": [
+      "　どちらにせよ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1217,
+    "index": 312,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1219,
+    "index": 313,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1223,
+    "index": 314,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1225,
+    "index": 315,
+    "value": [
+      "にわかには信じがたい出来事だった"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1259,
+    "index": 316,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1261,
+    "index": 317,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1265,
+    "index": 318,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1267,
+    "index": 319,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 1269,
+    "index": 320,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1270,
+    "index": 321,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1272,
+    "index": 322,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 1273,
+    "index": 323,
+    "value": []
+  },
+  {
+    "op": "00 02 05 00 FF 00",
+    "offset": 1274,
+    "index": 324,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 1280,
+    "index": 325,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1285,
+    "index": 326,
+    "value": []
+  },
+  {
+    "op": "00 02 06 00 FF 00",
+    "offset": 1286,
+    "index": 327,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 1292,
+    "index": 328,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1297,
+    "index": 329,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 1298,
+    "index": 330,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 1300,
+    "index": 331,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1308,
+    "index": 332,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 1309,
+    "index": 333,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 1314,
+    "index": 334,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1315,
+    "index": 335,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00 00",
+    "offset": 1317,
+    "index": 336,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1319,
+    "index": 337,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1321,
+    "index": 338,
+    "value": [
+      "「"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1325,
+    "index": 339,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1327,
+    "index": 340,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1331,
+    "index": 341,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1333,
+    "index": 342,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1337,
+    "index": 343,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1339,
+    "index": 344,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1343,
+    "index": 345,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1345,
+    "index": 346,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1349,
+    "index": 347,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1351,
+    "index": 348,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1357,
+    "index": 349,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1359,
+    "index": 350,
+    "value": [
+      "ぁ」"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 1365,
+    "index": 351,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1366,
+    "index": 352,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1368,
+    "index": 353,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 1369,
+    "index": 354,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 1370,
+    "index": 355,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 1372,
+    "index": 356,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1380,
+    "index": 357,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 1381,
+    "index": 358,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 1386,
+    "index": 359,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1387,
+    "index": 360,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "09 00",
+    "offset": 1389,
+    "index": 361,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1391,
+    "index": 362,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1393,
+    "index": 363,
+    "value": [
+      "　ふと"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1401,
+    "index": 364,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1403,
+    "index": 365,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1407,
+    "index": 366,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1409,
+    "index": 367,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 1411,
+    "index": 368,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 1412,
+    "index": 369,
+    "value": [
+      "　布団の上に何"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1428,
+    "index": 370,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1430,
+    "index": 371,
+    "value": [
+      "か"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1434,
+    "index": 372,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1436,
+    "index": 373,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1440,
+    "index": 374,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1442,
+    "index": 375,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1448,
+    "index": 376,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1450,
+    "index": 377,
+    "value": [
+      "細い糸のようなものが落ちている"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1482,
+    "index": 378,
+    "value": [
+      "のを見つけた"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1496,
+    "index": 379,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1498,
+    "index": 380,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1502,
+    "index": 381,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1504,
+    "index": 382,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 1506,
+    "index": 383,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1507,
+    "index": 384,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1509,
+    "index": 385,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 1510,
+    "index": 386,
+    "value": []
+  },
+  {
+    "op": "00 02 05 00 FF 00",
+    "offset": 1511,
+    "index": 387,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 1517,
+    "index": 388,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1522,
+    "index": 389,
+    "value": []
+  },
+  {
+    "op": "00 02 06 00 FF 00",
+    "offset": 1523,
+    "index": 390,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 1529,
+    "index": 391,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1534,
+    "index": 392,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 1535,
+    "index": 393,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 1537,
+    "index": 394,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1545,
+    "index": 395,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 1546,
+    "index": 396,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 1551,
+    "index": 397,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1552,
+    "index": 398,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1554,
+    "index": 399,
+    "value": [
+      "「髪の"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1562,
+    "index": 400,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1564,
+    "index": 401,
+    "value": [
+      "毛"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1568,
+    "index": 402,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1570,
+    "index": 403,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1574,
+    "index": 404,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1576,
+    "index": 405,
+    "value": [
+      "・・？"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1584,
+    "index": 406,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1586,
+    "index": 407,
+    "value": [
+      "」"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 1590,
+    "index": 408,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1591,
+    "index": 409,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1593,
+    "index": 410,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 1594,
+    "index": 411,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 1595,
+    "index": 412,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 1597,
+    "index": 413,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1605,
+    "index": 414,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 1606,
+    "index": 415,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 1611,
+    "index": 416,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1612,
+    "index": 417,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "09 00",
+    "offset": 1614,
+    "index": 418,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1616,
+    "index": 419,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1618,
+    "index": 420,
+    "value": [
+      "　するりとした感触のそれは"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1646,
+    "index": 421,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1648,
+    "index": 422,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1652,
+    "index": 423,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1654,
+    "index": 424,
+    "value": [
+      "細い女の髪の毛"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1670,
+    "index": 425,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1672,
+    "index": 426,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1676,
+    "index": 427,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1678,
+    "index": 428,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 1680,
+    "index": 429,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 1681,
+    "index": 430,
+    "value": [
+      "　希やユカリさんのものとは"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1709,
+    "index": 431,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1711,
+    "index": 432,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1715,
+    "index": 433,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1717,
+    "index": 434,
+    "value": [
+      "明らかに違う"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1731,
+    "index": 435,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1733,
+    "index": 436,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1737,
+    "index": 437,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1739,
+    "index": 438,
+    "value": [
+      "さらりと"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 1749,
+    "index": 439,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 1750,
+    "index": 440,
+    "value": [
+      "した長い髪の毛だった"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1772,
+    "index": 441,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1774,
+    "index": 442,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1778,
+    "index": 443,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1780,
+    "index": 444,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 1782,
+    "index": 445,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1783,
+    "index": 446,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1785,
+    "index": 447,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 1786,
+    "index": 448,
+    "value": []
+  },
+  {
+    "op": "00 02 05 00 FF 00",
+    "offset": 1787,
+    "index": 449,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 1793,
+    "index": 450,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1798,
+    "index": 451,
+    "value": []
+  },
+  {
+    "op": "00 02 06 00 FF 00",
+    "offset": 1799,
+    "index": 452,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 1805,
+    "index": 453,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1810,
+    "index": 454,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 1811,
+    "index": 455,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 1813,
+    "index": 456,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1821,
+    "index": 457,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 1822,
+    "index": 458,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 1827,
+    "index": 459,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1828,
+    "index": 460,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1830,
+    "index": 461,
+    "value": [
+      "「夢じ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1838,
+    "index": 462,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1840,
+    "index": 463,
+    "value": [
+      "ゃ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1844,
+    "index": 464,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1846,
+    "index": 465,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1850,
+    "index": 466,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1852,
+    "index": 467,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1858,
+    "index": 468,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1860,
+    "index": 469,
+    "value": [
+      "無かっ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1868,
+    "index": 470,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1870,
+    "index": 471,
+    "value": [
+      "た"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1874,
+    "index": 472,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1876,
+    "index": 473,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1880,
+    "index": 474,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1882,
+    "index": 475,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1886,
+    "index": 476,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1888,
+    "index": 477,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1892,
+    "index": 478,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1894,
+    "index": 479,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1898,
+    "index": 480,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1900,
+    "index": 481,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1906,
+    "index": 482,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1908,
+    "index": 483,
+    "value": [
+      "」"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 1912,
+    "index": 484,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1913,
+    "index": 485,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1915,
+    "index": 486,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 1916,
+    "index": 487,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 1918,
+    "index": 488,
+    "value": [
+      "u32:10"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1926,
+    "index": 489,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 1927,
+    "index": 490,
+    "value": [
+      "u32:10172"
+    ]
+  },
+  {
+    "op": "21",
+    "offset": 1932,
+    "index": 491,
+    "value": []
+  },
+  {
+    "op": "00 02 05 00 FF 00",
+    "offset": 1933,
+    "index": 492,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 1939,
+    "index": 493,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1944,
+    "index": 494,
+    "value": []
+  },
+  {
+    "op": "00 02 06 00 FF 00",
+    "offset": 1945,
+    "index": 495,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 1951,
+    "index": 496,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1956,
+    "index": 497,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 1957,
+    "index": 498,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 1959,
+    "index": 499,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 1967,
+    "index": 500,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 1968,
+    "index": 501,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 1973,
+    "index": 502,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 1974,
+    "index": 503,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1976,
+    "index": 504,
+    "value": [
+      "「でも"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1984,
+    "index": 505,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1986,
+    "index": 506,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1990,
+    "index": 507,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1992,
+    "index": 508,
+    "value": [
+      "何"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 1996,
+    "index": 509,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 1998,
+    "index": 510,
+    "value": [
+      "故"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2002,
+    "index": 511,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2004,
+    "index": 512,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2008,
+    "index": 513,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2010,
+    "index": 514,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2014,
+    "index": 515,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2016,
+    "index": 516,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2020,
+    "index": 517,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2022,
+    "index": 518,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2026,
+    "index": 519,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2028,
+    "index": 520,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2034,
+    "index": 521,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2036,
+    "index": 522,
+    "value": [
+      "」"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2040,
+    "index": 523,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2041,
+    "index": 524,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2043,
+    "index": 525,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 2044,
+    "index": 526,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 2045,
+    "index": 527,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 2047,
+    "index": 528,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2055,
+    "index": 529,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 2056,
+    "index": 530,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 2061,
+    "index": 531,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2062,
+    "index": 532,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "09 00",
+    "offset": 2064,
+    "index": 533,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2066,
+    "index": 534,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2068,
+    "index": 535,
+    "value": [
+      "”殺したい程"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2082,
+    "index": 536,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2084,
+    "index": 537,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2088,
+    "index": 538,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2090,
+    "index": 539,
+    "value": [
+      "愛してる”"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2102,
+    "index": 540,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2103,
+    "index": 541,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 2105,
+    "index": 542,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 2106,
+    "index": 543,
+    "value": [
+      "　彼女は"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2116,
+    "index": 544,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2118,
+    "index": 545,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2122,
+    "index": 546,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2124,
+    "index": 547,
+    "value": [
+      "間違いなく"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2136,
+    "index": 548,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2138,
+    "index": 549,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2142,
+    "index": 550,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2144,
+    "index": 551,
+    "value": [
+      "そう言っていた"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2160,
+    "index": 552,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2162,
+    "index": 553,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2166,
+    "index": 554,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2168,
+    "index": 555,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 2170,
+    "index": 556,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 2171,
+    "index": 557,
+    "value": [
+      "　だが"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2179,
+    "index": 558,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2181,
+    "index": 559,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2185,
+    "index": 560,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2187,
+    "index": 561,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2189,
+    "index": 562,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2190,
+    "index": 563,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 2192,
+    "index": 564,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 2193,
+    "index": 565,
+    "value": [
+      "（何"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2199,
+    "index": 566,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2201,
+    "index": 567,
+    "value": [
+      "故"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2205,
+    "index": 568,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2207,
+    "index": 569,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2211,
+    "index": 570,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2213,
+    "index": 571,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2219,
+    "index": 572,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2221,
+    "index": 573,
+    "value": [
+      "俺"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2225,
+    "index": 574,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2227,
+    "index": 575,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2231,
+    "index": 576,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2233,
+    "index": 577,
+    "value": [
+      "なん"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2239,
+    "index": 578,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2241,
+    "index": 579,
+    "value": [
+      "だ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2245,
+    "index": 580,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2247,
+    "index": 581,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2251,
+    "index": 582,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2253,
+    "index": 583,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2259,
+    "index": 584,
+    "value": [
+      "u8:40"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2261,
+    "index": 585,
+    "value": [
+      "？"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2265,
+    "index": 586,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2267,
+    "index": 587,
+    "value": [
+      "）"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2271,
+    "index": 588,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2272,
+    "index": 589,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 2274,
+    "index": 590,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 2275,
+    "index": 591,
+    "value": [
+      "　分からなかった"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2293,
+    "index": 592,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2295,
+    "index": 593,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2299,
+    "index": 594,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2301,
+    "index": 595,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 2303,
+    "index": 596,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 2304,
+    "index": 597,
+    "value": [
+      "　その対象"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2316,
+    "index": 598,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2318,
+    "index": 599,
+    "value": [
+      "が"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2322,
+    "index": 600,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2324,
+    "index": 601,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2328,
+    "index": 602,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2330,
+    "index": 603,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2336,
+    "index": 604,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2338,
+    "index": 605,
+    "value": [
+      "何故"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2344,
+    "index": 606,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2346,
+    "index": 607,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2350,
+    "index": 608,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2352,
+    "index": 609,
+    "value": [
+      "自分なのか"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2364,
+    "index": 610,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2366,
+    "index": 611,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2370,
+    "index": 612,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2372,
+    "index": 613,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2374,
+    "index": 614,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2375,
+    "index": 615,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 2377,
+    "index": 616,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 2378,
+    "index": 617,
+    "value": [
+      "（何"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2384,
+    "index": 618,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2386,
+    "index": 619,
+    "value": [
+      "故"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2390,
+    "index": 620,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2392,
+    "index": 621,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2396,
+    "index": 622,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2398,
+    "index": 623,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2402,
+    "index": 624,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2404,
+    "index": 625,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2408,
+    "index": 626,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2410,
+    "index": 627,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2414,
+    "index": 628,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2416,
+    "index": 629,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2420,
+    "index": 630,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2422,
+    "index": 631,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2426,
+    "index": 632,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2428,
+    "index": 633,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2432,
+    "index": 634,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2434,
+    "index": 635,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2440,
+    "index": 636,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2442,
+    "index": 637,
+    "value": [
+      "）"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2446,
+    "index": 638,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2447,
+    "index": 639,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "17",
+    "offset": 2449,
+    "index": 640,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 2450,
+    "index": 641,
+    "value": [
+      "　不思議過ぎる出来事に困惑しつ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2482,
+    "index": 642,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2484,
+    "index": 643,
+    "value": [
+      "つ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2488,
+    "index": 644,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2490,
+    "index": 645,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2494,
+    "index": 646,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2496,
+    "index": 647,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2502,
+    "index": 648,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2504,
+    "index": 649,
+    "value": [
+      "何の気無しに"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2518,
+    "index": 650,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2520,
+    "index": 651,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2524,
+    "index": 652,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2526,
+    "index": 653,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2528,
+    "index": 654,
+    "value": [
+      "テーブルに置かれた腕時計に目をやる"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2564,
+    "index": 655,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2566,
+    "index": 656,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2570,
+    "index": 657,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2572,
+    "index": 658,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2574,
+    "index": 659,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2575,
+    "index": 660,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2577,
+    "index": 661,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 2578,
+    "index": 662,
+    "value": []
+  },
+  {
+    "op": "00 02 05 00 FF 00",
+    "offset": 2579,
+    "index": 663,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 2585,
+    "index": 664,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2590,
+    "index": 665,
+    "value": []
+  },
+  {
+    "op": "00 02 06 00 FF 00",
+    "offset": 2591,
+    "index": 666,
+    "value": []
+  },
+  {
+    "op": "05",
+    "offset": 2597,
+    "index": 667,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2602,
+    "index": 668,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 2603,
+    "index": 669,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 2605,
+    "index": 670,
+    "value": [
+      "u32:1"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2613,
+    "index": 671,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 2614,
+    "index": 672,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 2619,
+    "index": 673,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2620,
+    "index": 674,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00 00",
+    "offset": 2622,
+    "index": 675,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2624,
+    "index": 676,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2626,
+    "index": 677,
+    "value": [
+      "「"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2630,
+    "index": 678,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2632,
+    "index": 679,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2636,
+    "index": 680,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2638,
+    "index": 681,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2642,
+    "index": 682,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2644,
+    "index": 683,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2648,
+    "index": 684,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2650,
+    "index": 685,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2654,
+    "index": 686,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2656,
+    "index": 687,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2662,
+    "index": 688,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2664,
+    "index": 689,
+    "value": [
+      "ま"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2668,
+    "index": 690,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2670,
+    "index": 691,
+    "value": [
+      "だ"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2674,
+    "index": 692,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2676,
+    "index": 693,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2680,
+    "index": 694,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2682,
+    "index": 695,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2688,
+    "index": 696,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2690,
+    "index": 697,
+    "value": [
+      "８時半"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2698,
+    "index": 698,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2700,
+    "index": 699,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2704,
+    "index": 700,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2706,
+    "index": 701,
+    "value": [
+      "か」"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2712,
+    "index": 702,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2713,
+    "index": 703,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2715,
+    "index": 704,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 2716,
+    "index": 705,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 2717,
+    "index": 706,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 2719,
+    "index": 707,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2727,
+    "index": 708,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 2728,
+    "index": 709,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 2733,
+    "index": 710,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2734,
+    "index": 711,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "09 00",
+    "offset": 2736,
+    "index": 712,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2738,
+    "index": 713,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2740,
+    "index": 714,
+    "value": [
+      "　どうやら"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2752,
+    "index": 715,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2754,
+    "index": 716,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2758,
+    "index": 717,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2760,
+    "index": 718,
+    "value": [
+      "時間的には丁度良い時間に目を覚ましたよう"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2802,
+    "index": 719,
+    "value": [
+      "だった"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2810,
+    "index": 720,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2812,
+    "index": 721,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2816,
+    "index": 722,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2818,
+    "index": 723,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2820,
+    "index": 724,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2821,
+    "index": 725,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2823,
+    "index": 726,
+    "value": []
+  },
+  {
+    "op": "21",
+    "offset": 2824,
+    "index": 727,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 2825,
+    "index": 728,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 2827,
+    "index": 729,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2835,
+    "index": 730,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 2836,
+    "index": 731,
+    "value": [
+      "u32:5869"
+    ]
+  },
+  {
+    "op": "34",
+    "offset": 2841,
+    "index": 732,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2842,
+    "index": 733,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2844,
+    "index": 734,
+    "value": [
+      "　こうしてても仕方が無い"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2870,
+    "index": 735,
+    "value": [
+      "u8:50"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2872,
+    "index": 736,
+    "value": [
+      "。"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2876,
+    "index": 737,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2878,
+    "index": 738,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "14",
+    "offset": 2880,
+    "index": 739,
+    "value": []
+  },
+  {
+    "op": "00",
+    "offset": 2881,
+    "index": 740,
+    "value": [
+      "　とりあえず"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2895,
+    "index": 741,
+    "value": [
+      "u8:30"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2897,
+    "index": 742,
+    "value": [
+      "、"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2901,
+    "index": 743,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2903,
+    "index": 744,
+    "value": [
+      "希達に朝の挨拶でもしてくる"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2931,
+    "index": 745,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2933,
+    "index": 746,
+    "value": [
+      "か"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2937,
+    "index": 747,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2939,
+    "index": 748,
+    "value": [
+      "・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2943,
+    "index": 749,
+    "value": [
+      "u8:15"
+    ]
+  },
+  {
+    "op": "00",
+    "offset": 2945,
+    "index": 750,
+    "value": [
+      "・・"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2951,
+    "index": 751,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "08",
+    "offset": 2953,
+    "index": 752,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "15",
+    "offset": 2955,
+    "index": 753,
+    "value": []
+  },
+  {
+    "op": "08",
+    "offset": 2956,
+    "index": 754,
+    "value": [
+      "u8:11"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2958,
+    "index": 755,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 2959,
+    "index": 756,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 2961,
+    "index": 757,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2969,
+    "index": 758,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 2970,
+    "index": 759,
+    "value": []
+  },
+  {
+    "op": "11 FF 00 05",
+    "offset": 2972,
+    "index": 760,
+    "value": [
+      "u32:22"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 2980,
+    "index": 761,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 2981,
+    "index": 762,
+    "value": [
+      "u32:6158"
+    ]
+  },
+  {
+    "op": "0B",
+    "offset": 2986,
+    "index": 763,
+    "value": [
+      "u32:10206"
+    ]
+  },
+  {
+    "op": "20",
+    "offset": 2991,
+    "index": 764,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 2992,
+    "index": 765,
+    "value": []
+  },
+  {
+    "op": "02",
+    "offset": 2994,
+    "index": 766,
+    "value": [
+      "u8:14"
+    ]
+  },
+  {
+    "op": "00 FF",
+    "offset": 2996,
+    "index": 767,
+    "value": []
+  },
+  {
+    "op": "00 05",
+    "offset": 2998,
+    "index": 768,
+    "value": [
+      "u32:0"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 3004,
+    "index": 769,
+    "value": []
+  },
+  {
+    "op": "00 00",
+    "offset": 3005,
+    "index": 770,
+    "value": []
+  },
+  {
+    "op": "10 FF 00 05",
+    "offset": 3007,
+    "index": 771,
+    "value": [
+      "u32:305"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 3015,
+    "index": 772,
+    "value": []
+  },
+  {
+    "op": "0B",
+    "offset": 3016,
+    "index": 773,
+    "value": [
+      "u32:10377"
+    ]
+  },
+  {
+    "op": "93",
+    "offset": 3021,
+    "index": 774,
+    "value": [
+      "u32:24832"
+    ]
+  },
+  {
+    "op": "FF",
+    "offset": 3026,
+    "index": 775,
+    "value": []
+  }
+]

@@ -1,0 +1,787 @@
+# outline
+
+创建时间: 2026-01-08 13:37:05
+
+
+```C#
+[Export(typeof(ArchiveFormat))]
+    public class ScnOpener : ArchiveFormat
+    {
+        public override string         Tag { get { return "SERAPH/SCN"; } }
+        public override string Description { get { return "Seraphim engine scripts archive"; } }
+        public override uint     Signature { get { return 0; } }
+        public override bool  IsHierarchic { get { return false; } }
+        public override bool      CanWrite { get { return false; } }
+
+        public ScnOpener ()
+        {
+            Extensions = new string[] { "dat" };
+        }
+
+        public override ArcFile TryOpen (ArcView file)
+        {
+            if (!VFS.IsPathEqualsToFileName (file.Name, "SCNPAC.DAT"))
+                return null;
+            int count = file.View.ReadInt32 (0);
+            if (!IsSaneCount (count))
+                return null;
+            uint index_size = 4 * (uint)count;
+            if (index_size > file.View.Reserve (4, index_size))
+                return null;
+
+            int index_offset = 4;
+            uint next_offset = file.View.ReadUInt32 (index_offset);
+            if (next_offset < index_offset + index_size)
+                return null;
+            var dir = new List<Entry> (count);
+            for (int i = 0; i < count; ++i)
+            {
+                index_offset += 4;
+                var entry = new Entry { Name = i.ToString ("D5"), Type = "script" };
+                entry.Offset = next_offset;
+                next_offset = file.View.ReadUInt32 (index_offset);
+                if (next_offset < entry.Offset || next_offset > file.MaxOffset)
+                    return null;
+                entry.Size = next_offset - (uint)entry.Offset;
+                dir.Add (entry);
+            }
+            return new ArcFile (file, this, dir);
+        }
+
+        public override Stream OpenEntry (ArcFile arc, Entry entry)
+        {
+            if (0 == entry.Size)
+                return Stream.Null;
+            uint signature = arc.File.View.ReadUInt32 (entry.Offset);
+            IBinaryStream input;
+            if (1 == signature && 0x78 == arc.File.View.ReadByte (entry.Offset+4))
+            {
+                input = arc.File.CreateStream (entry.Offset+4, entry.Size-4);
+                return new ZLibStream (input.AsStream, CompressionMode.Decompress);
+                /*
+                using (var compr = new ZLibStream (input.AsStream, CompressionMode.Decompress))
+                using (var bin = new BinaryStream (compr, entry.Name))
+                {
+                    var data = LzDecompress (bin);
+                    return new BinMemoryStream (data, entry.Name);
+                }
+                */
+            }
+            input = arc.File.CreateStream (entry.Offset, entry.Size);
+            if (signature < 4 || 0 != (signature & 0xFF000000))
+            {
+                if (0x78 == (signature & 0xFF))
+                {
+                    var compr = new ZLibStream (input.AsStream, CompressionMode.Decompress);
+                    input = new BinaryStream (compr, entry.Name);
+                }
+                else
+                    return input.AsStream;
+            }
+            try
+            {
+                var data = LzDecompress (input);
+                return new BinMemoryStream (data, entry.Name);
+            }
+            catch
+            {
+                return arc.File.CreateStream (entry.Offset, entry.Size);
+            }
+            finally
+            {
+                input.Dispose();
+            }
+        }
+
+        internal static byte[] LzDecompress (IBinaryStream input)
+        {
+            int unpacked_size = input.ReadInt32();
+            var data = new byte[unpacked_size];
+            int dst = 0;
+            while (dst < unpacked_size)
+            {
+                int ctl = input.ReadByte();
+                if (-1 == ctl)
+                    throw new EndOfStreamException();
+                if (0 != (ctl & 0x80))
+                {
+                    byte lo = input.ReadUInt8();
+                    int offset = ((ctl << 3 | lo >> 5) & 0x3FF) + 1;
+                    int count = (lo & 0x1F) + 1;
+                    Binary.CopyOverlapped (data, dst-offset, dst, count);
+                    dst += count;
+                }
+                else
+                {
+                    int count = ctl + 1;
+                    if (input.Read (data, dst, count) != count)
+                        throw new EndOfStreamException();
+                    dst += count;
+                }
+            }
+            return data;
+        }
+    }
+```
+
+
+根据C#完成下面的py脚本
+
+
+```py
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import argparse
+from pathlib import Path
+
+
+def unpack(input_path: Path, out_dir: Path):
+    # TODO:
+    pass
+
+
+def pack(input_dir: Path, out_path: Path):
+    # TODO:
+    pass
+
+
+def main():
+    ap = argparse.ArgumentParser(
+        description="packer 解包/打包工具")
+    sub = ap.add_subparsers(dest='cmd', required=True)
+    ap_unpack = sub.add_parser('unpack', help='解包')
+    ap_unpack.add_argument('-i', '--input', required=True, help='输入')
+    ap_unpack.add_argument('-o', '--out', required=True, help='输出')
+    ap_pack = sub.add_parser('pack', help='打包')
+    ap_pack.add_argument('-i', '--input', required=True, help='输入')
+    ap_pack.add_argument('-o', '--out', required=True, help='输出')
+    args = ap.parse_args()
+    if args.cmd == 'unpack':
+        unpack(Path(args.input), Path(args.out))
+    elif args.cmd == 'pack':
+        pack(Path(args.input), Path(args.out))
+
+
+if __name__ == '__main__':
+    main()
+```
+
+注意，包开头的u32，实际上索引区的数量应该是这个u32+1，索引区的长度即`(u32 + 1) * 4`，C#代码写的比较隐晦
+然后，我们解包和封包的时候，会对每个脚本尝试压缩和解压缩处理，这里我们解包只实现`LzDecompress`，不需要像C#这样复杂的判断
+如果`LZ`解压失败，则直接输出脚本（和C#相符），然后我们需要输出一个`__META__.json`，来记录每个脚本文件是否进行解压缩还是直接输出
+
+然后我们封包的时候，仅对之前是解压的脚本进行lz压缩（与解包互逆，也就是说我们需要根据Lz解压写出等效的Lz压缩，只要保证能被解压正确解出字节即可），类似于C#，我们按照顺序输出每个脚本，名字为索引`00000`，`00001`...
+
+
+---
+
+use anyhow::Result;
+use encoding_rs::SHIFT_JIS;
+use std::{collections::HashMap, path::Path};
+use translate_utils::{
+    replacement_pool::ReplacementPool,
+    text::Text,
+    translated_dict::TranslatedDict,
+    utils::{collect_files, decode_strict, to_full_width},
+};
+
+use clap::{Parser, Subcommand};
+
+#[derive(Parser, Debug)]
+#[command(about = "特定格式 文件文本提取与替换工具")]
+pub struct Cli {
+    #[command(subcommand)]
+    pub command: Commands,
+}
+
+#[derive(Subcommand, Debug)]
+pub enum Commands {
+    #[command(
+        about = "扫描指定路径下的所有 .特定格式 文件，提取文本并进行全局去重，最后输出为格式 A 的 JSON 文件。"
+    )]
+    Extract {
+        #[arg(
+            long,
+            required = true,
+            help = "一个或多个 特定格式 文件或包含 特定格式 文件的文件夹路径"
+        )]
+        path: Vec<String>,
+
+        #[arg(
+            long,
+            default_value = "raw.json",
+            help = "输出的 JSON 文件路径 (格式 A)"
+        )]
+        output: String,
+    },
+
+    #[command(
+        about = "根据原文->译文的 JSON 字典 (格式 B)，替换指定路径下 .特定格式 文件中的文本。结果会输出到 'translated' 文件夹。"
+    )]
+    Replace {
+        #[arg(
+            long,
+            required = true,
+            help = "一个或多个 特定格式 文件或包含 特定格式 文件的文件夹路径"
+        )]
+        path: Vec<String>,
+
+        #[arg(
+            long,
+            default_value = "translated.json",
+            help = "包含原文->译文映射的 JSON 文件路径 (格式 B)"
+        )]
+        dict: String,
+
+        #[arg(
+            long,
+            default_value = "replacement_pool.json",
+            help = "包含替身字符的 JSON 文件路径 (格式 D)"
+        )]
+        replacement_pool: String,
+    },
+}
+
+// // ANOTHER
+// const NAMES: [&str; 20] = [
+//     "",
+//     "賢護",
+//     "未影",
+//     "華菜子",
+//     "アリシア",
+//     "周子",
+//     "達也",
+//     "女子",
+//     "女子A",
+//     "女子B",
+//     "女子C",
+//     "女子D",
+//     "男子",
+//     "男子A",
+//     "男子B",
+//     "男子C",
+//     "男子D",
+//     "男子達",
+//     "男",
+//     "教師",
+// ];
+
+// const NAME_BYTES: [u8; 4] = [0xFF, 0x0F, 0x6B, 0x23];
+
+// // NOISE
+// const NAMES: [&str; 32] = [
+//     "",
+//     "犬",
+//     "義明",
+//     "千鶴",
+//     "理彩",
+//     "亜優里",
+//     "美佳",
+//     "少女",
+//     "女",
+//     "親父",
+//     "糞爺",
+//     "鬼婆",
+//     "客",
+//     "男",
+//     "男1",
+//     "男2",
+//     "男3",
+//     "近所の親父",
+//     "アナウンサー",
+//     "教師",
+//     "警官",
+//     "酔っぱらい",
+//     "中年の男",
+//     "千鶴の友人",
+//     "少年",
+//     "？？？",
+//     "亜優里 理彩",
+//     "千鶴 亜優里",
+//     "千鶴 理彩",
+//     "三人",
+//     "四人",
+//     "学生達",
+// ];
+
+// const NAME_BYTES: [u8; 4] = [0xFF, 0x0F, 0xE8, 0x1E];
+
+// LUSTS
+const NAMES: [&str; 30] = [
+    "",
+    "竜",
+    "真理愛",
+    "葉乃香",
+    "吹雪",
+    "直美",
+    "四郎",
+    "佐野",
+    "四郎妹",
+    "立川講師",
+    "女",
+    "女",
+    "女A",
+    "女B",
+    "女子A",
+    "女子B",
+    "女子C",
+    "女子達",
+    "オタク女",
+    "男",
+    "男A",
+    "男B",
+    "男C",
+    "教師",
+    "アナウンサー",
+    "オタクA",
+    "オタクB",
+    "男",
+    "裕子",
+    "売り子",
+];
+
+const NAME_BYTES: [u8; 4] = [0xFF, 0x0F, 0xBB, 0x23];
+
+#[derive(Debug)]
+struct TextSegment {
+    offset: usize,
+    bytes_len: usize,
+    text: String,
+}
+
+#[derive(Debug)]
+struct TextBlock {
+    file: String,
+    name: Option<String>,
+    segments: Vec<TextSegment>,
+}
+
+impl TextBlock {
+    pub fn new(file: String, name: usize) -> Self {
+        let name = if name == 0 {
+            None
+        } else {
+            Some(NAMES[name].to_string())
+        };
+
+        Self {
+            file,
+            name,
+            segments: Vec::new(),
+        }
+    }
+
+    pub fn extract_text(&self) -> String {
+        self.segments.iter().map(|seg| &seg.text).cloned().collect()
+    }
+
+    pub fn replace_text(&self, data: &mut [u8], new_bytes: &[u8]) -> Result<()> {
+        let total_len: usize = self.segments.iter().map(|s| s.bytes_len).sum();
+
+        if !total_len.is_multiple_of(2) {
+            anyhow::bail!("文本块 '{self:?}' 字节长度不为偶数 {total_len}");
+        }
+
+        if !new_bytes.len().is_multiple_of(2) {
+            anyhow::bail!(
+                "文本块 '{:?}' 新字节序列长度不为偶数 {}",
+                self,
+                new_bytes.len()
+            );
+        }
+
+        if new_bytes.len() > total_len {
+            anyhow::bail!(
+                "字节超出({} > {}): {}",
+                new_bytes.len(),
+                total_len,
+                self.extract_text()
+            );
+        }
+
+        let mut src_idx = 0usize;
+        let mut remaining = new_bytes.len();
+
+        for seg in &self.segments {
+            let write_len = std::cmp::min(seg.bytes_len, remaining);
+            if write_len > 0 {
+                let dst_start = seg.offset;
+                let dst_end = dst_start + write_len;
+                data[dst_start..dst_end].copy_from_slice(&new_bytes[src_idx..src_idx + write_len]);
+                src_idx += write_len;
+                remaining -= write_len;
+            }
+
+            let pad_len = seg.bytes_len - write_len;
+            if pad_len > 0 {
+                let pad_start = seg.offset + write_len;
+                for i in 0..pad_len {
+                    // 按段内从剩余起点开始交替填充 0x81, 0x40
+                    data[pad_start + i] = if (i % 2) == 0 { 0x81u8 } else { 0x40u8 };
+                }
+            }
+        }
+
+        assert_eq!(remaining, 0);
+
+        Ok(())
+    }
+}
+
+fn parse_file(file_path: &str) -> Result<Vec<TextBlock>> {
+    let data = std::fs::read(file_path)?;
+    let len = data.len();
+
+    let mut current_name: usize = 0;
+    let mut current_block: Option<TextBlock> = None;
+    let mut blocks: Vec<TextBlock> = Vec::new();
+    let mut i: usize = 0;
+
+    while i < len {
+        // 1) FF 0F 6B 23 标志：前面的 4 字节是 u32 name 索引（little-endian）
+        if i + 4 <= len && data[i..i + 4] == NAME_BYTES {
+            if i >= 4 {
+                let prev = &data[i - 4..i];
+                let idx = u32::from_le_bytes([prev[0], prev[1], prev[2], prev[3]]) as usize;
+                current_name = idx;
+
+                if let Some(cb) = current_block.take()
+                    && !cb.segments.is_empty()
+                {
+                    blocks.push(cb);
+                }
+            } else {
+                eprintln!("警告: 在文件开头遇到 FF 0F 6B 23，但前面不足 4 字节，offset={i}");
+            }
+            i += 4;
+            continue;
+        }
+
+        // 如果遇到 15 17 或 15 08（结束 current_block 的标志），先把 current_block push（如果有）
+        if i + 2 <= len {
+            let mark1 = data[i] == 0x15 && data[i + 1] == 0x17;
+            let mark2 = data[i] == 0x15 && data[i + 1] == 0x8;
+            if mark1 || mark2 {
+                if let Some(cb) = current_block.take()
+                    && !cb.segments.is_empty()
+                {
+                    blocks.push(cb);
+                }
+                i += 2;
+                continue;
+            }
+        }
+
+        // 2) FE 02：先把 current_block push（如果有），然后按原规则跳过后 4 字节，读取两个以 0x00 结尾的字符串，
+        //    将它们分别作为两个独立的无名 block（每个 block 一个 segment）
+        if i + 2 <= len && data[i] == 0xFE && data[i + 1] == 0x02 {
+            // 先关闭并 push current_block（如果存在）
+            if let Some(cb) = current_block.take()
+                && !cb.segments.is_empty()
+            {
+                blocks.push(cb);
+            }
+
+            if i + 6 > len {
+                eprintln!("FE 02 标记后的 4 字节不可读，offset={i}");
+                i += 1;
+                continue;
+            }
+
+            let mut pos = i + 6; // 第一个字符串起始
+            let mut j = pos;
+            while j < len && data[j] != 0x00 {
+                j += 1;
+            }
+            if j >= len {
+                eprintln!("FE 02 后找第一个 null 失败，offset={pos}");
+                i += 1;
+                continue;
+            }
+            let first_bytes = &data[pos..j];
+            let first_text = match decode_strict(SHIFT_JIS, first_bytes) {
+                Ok(s) => s,
+                Err(e) => {
+                    eprintln!("decode_strict 失败(第一个字符串) offset={pos} err={e}");
+                    i += 1;
+                    continue;
+                }
+            };
+            let first_seg = TextSegment {
+                offset: pos,
+                bytes_len: j - pos,
+                text: first_text,
+            };
+
+            // 第二个字符串从 j+1 开始
+            pos = j + 1;
+            if pos >= len {
+                eprintln!("FE 02: 第一个字符串之后没有数据，offset={j}");
+                i += 1;
+                continue;
+            }
+            let mut k = pos;
+            while k < len && data[k] != 0x00 {
+                k += 1;
+            }
+            if k >= len {
+                eprintln!("FE 02 后找第二个 null 失败，offset={pos}");
+                i += 1;
+                continue;
+            }
+            let second_bytes = &data[pos..k];
+            let second_text = match decode_strict(SHIFT_JIS, second_bytes) {
+                Ok(s) => s,
+                Err(e) => {
+                    eprintln!("decode_strict 失败(第二个字符串) offset={pos} err={e}");
+                    i += 1;
+                    continue;
+                }
+            };
+            let second_seg = TextSegment {
+                offset: pos,
+                bytes_len: k - pos,
+                text: second_text,
+            };
+
+            let mut block1 = TextBlock::new(file_path.to_string(), 0);
+            block1.segments.push(first_seg);
+            blocks.push(block1);
+
+            let mut block2 = TextBlock::new(file_path.to_string(), 0);
+            block2.segments.push(second_seg);
+            blocks.push(block2);
+
+            i = k + 1;
+            continue;
+        }
+
+        // 3) 08 ?? 00 模式：字符串从 i+3 开始
+        if i + 3 <= len && data[i] == 0x08 && data[i + 2] == 0x00 {
+            let start = i + 3;
+            if start >= len {
+                eprintln!("08 ?? 00 起始越界 offset={i}");
+                i += 1;
+                continue;
+            }
+            let mut j = start;
+            while j < len && data[j] != 0x00 {
+                j += 1;
+            }
+            if j >= len {
+                eprintln!("08 ?? 00: 未找到终止 null offset={start}");
+                i += 1;
+                continue;
+            }
+            let bytes = &data[start..j];
+            let decoded = match decode_strict(SHIFT_JIS, bytes) {
+                Ok(s) => s,
+                Err(e) => {
+                    eprintln!("decode_strict 失败(08 模式) offset={start} err={e:?}");
+                    i += 1;
+                    continue;
+                }
+            };
+            let seg = TextSegment {
+                offset: start,
+                bytes_len: j - start, // 不包含终止 0x00
+                text: decoded,
+            };
+
+            if let Some(ref mut cb) = current_block {
+                cb.segments.push(seg);
+            } else {
+                current_block = Some(TextBlock::new(file_path.to_string(), current_name));
+                current_block.as_mut().unwrap().segments.push(seg);
+            }
+            i = j + 1;
+            continue;
+        }
+
+        // 4) 14 00 模式：字符串从 i+2 开始
+        if i + 2 <= len && data[i] == 0x14 && data[i + 1] == 0x00 {
+            let start = i + 2;
+            if start >= len {
+                eprintln!("14 00 起始越界 offset={i}");
+                i += 1;
+                continue;
+            }
+            let mut j = start;
+            while j < len && data[j] != 0x00 {
+                j += 1;
+            }
+            if j >= len {
+                eprintln!("14 00: 未找到终止 null offset={start}");
+                i += 1;
+                continue;
+            }
+            let bytes = &data[start..j];
+            let decoded = match decode_strict(SHIFT_JIS, bytes) {
+                Ok(s) => s,
+                Err(e) => {
+                    eprintln!("decode_strict 失败(14 模式) offset={start} err={e}");
+                    i += 1;
+                    continue;
+                }
+            };
+            let seg = TextSegment {
+                offset: start,
+                bytes_len: j - start, // 不包含终止 0x00
+                text: decoded,
+            };
+
+            if let Some(ref mut cb) = current_block {
+                cb.segments.push(seg);
+            } else {
+                current_block = Some(TextBlock::new(file_path.to_string(), current_name));
+                current_block.as_mut().unwrap().segments.push(seg);
+            }
+            i = j + 1;
+            continue;
+        }
+
+        i += 1;
+    }
+
+    if let Some(cb) = current_block.take()
+        && !cb.segments.is_empty()
+    {
+        blocks.push(cb);
+    }
+
+    Ok(blocks)
+}
+
+fn extract_text_blocks(blocks: Vec<TextBlock>) -> Text {
+    let mut raw = Text::new();
+
+    for block in blocks {
+        let contents = block.extract_text();
+        if let Some(name) = block.name {
+            raw.add_with_name(name, contents);
+        } else {
+            raw.add(contents);
+        }
+    }
+
+    raw.dedup_by_message();
+    raw
+}
+
+fn replace_text_blocks(
+    blocks: Vec<TextBlock>,
+    dict: &TranslatedDict,
+    replacement_pool: &mut ReplacementPool,
+) -> Result<HashMap<String, Vec<u8>>> {
+    let mut file_data = HashMap::new();
+    let mut file_modified = HashMap::new();
+
+    // 先收集所有需要修改的文件
+    for block in &blocks {
+        file_data
+            .entry(block.file.clone())
+            .or_insert_with(|| std::fs::read(&block.file).unwrap_or_default());
+    }
+
+    for block in blocks {
+        let file_path = block.file.clone();
+        let data = file_data.get_mut(&file_path).unwrap();
+        let block_text = block.extract_text();
+
+        // 检查字典中是否有译文
+        if !dict.contains_key(&block_text) {
+            continue;
+        }
+
+        let new_text = dict.translate_or_original(&block_text);
+
+        // 如果译文与原文相同，跳过替换
+        if new_text == block_text {
+            continue;
+        }
+
+        let full_width_text = to_full_width(&new_text)?;
+        let mapped_text = replacement_pool.map_text(&full_width_text)?;
+        let encoded = SHIFT_JIS.encode(&mapped_text).0.into_owned();
+
+        block.replace_text(data, &encoded)?;
+
+        file_modified.insert(file_path, data.clone());
+    }
+
+    Ok(file_modified)
+}
+
+fn extract_mode(path: Vec<String>, output: String) -> Result<()> {
+    let files = collect_files(path, None)?;
+    let mut all_blocks = Vec::new();
+
+    for file in &files {
+        let blocks = parse_file(file)?;
+        all_blocks.extend(blocks);
+    }
+
+    let raw_contents = extract_text_blocks(all_blocks);
+    raw_contents.write_to_path(output)?;
+
+    println!("提取文本项 {}", raw_contents.len());
+    Ok(())
+}
+
+fn replace_mode(path: Vec<String>, dict: String, replacement_pool: String) -> Result<()> {
+    let files = collect_files(path, None)?;
+    let mut replacement_pool = ReplacementPool::from_path(replacement_pool)?;
+    let dict = TranslatedDict::from_path(dict)?;
+    let mut all_blocks = Vec::new();
+    let output_dir = Path::new("translated");
+
+    if !output_dir.exists() {
+        std::fs::create_dir(output_dir)?;
+    }
+
+    for file in &files {
+        let blocks = parse_file(file)?;
+        all_blocks.extend(blocks);
+    }
+
+    let modified_files = replace_text_blocks(all_blocks, &dict, &mut replacement_pool)?;
+
+    for (file, data) in modified_files {
+        let rel_path = Path::new(&file);
+        let new_path = output_dir.join(rel_path.file_name().unwrap());
+        std::fs::write(new_path, data)?;
+    }
+
+    replacement_pool.write_charmap_to_path("mapping.json")?;
+
+    println!("替换成功");
+    Ok(())
+}
+
+fn main() -> Result<()> {
+    let cli = Cli::parse();
+
+    match cli.command {
+        Commands::Extract { path, output } => extract_mode(path, output),
+        Commands::Replace {
+            path,
+            dict,
+            replacement_pool,
+        } => replace_mode(path, dict, replacement_pool),
+    }
+}
+
+---
+
+
+generated/translated\00038.json, {'op': '06', 'offset': 12738, 'index': 3253, 'value': ['u32:12748']} 指向不存在的 offset: 12748 （31CC）
+generated/translated\00038.json, {'op': '15 FF', 'offset': 12756, 'index': 3257, 'value': ['u32:15617', 'u32:66858']} 指向不存在的 offset: 66858
+generated/translated\00038.json, {'op': '06', 'offset': 12859, 'index': 3294, 'value': ['u32:12869']} 指向不存在的 offset: 12869 （3245）
+generated/translated\00038.json, {'op': '15 FF', 'offset': 12877, 'index': 3298, 'value': ['u32:15757', 'u32:66858']} 指向不存在的 offset: 66858
+generated/translated\00038.json, {'op': '11 FF', 'offset': 12956, 'index': 3330, 'value': ['u32:656642']} 指向不存在的 offset: 656642
+generated/translated\00128.json, {'op': '06', 'offset': 14086, 'index': 3604, 'value': ['u32:14096']} 指向不存在的 offset: 14096 （3710）
+generated/translated\00128.json, {'op': '15 FF', 'offset': 14104, 'index': 3608, 'value': ['u32:17417', 'u32:66858']} 指向不存在的 offset: 66858
+generated/translated\00128.json, {'op': '06', 'offset': 14207, 'index': 3645, 'value': ['u32:14217']} 指向不存在的 offset: 14217 （3789）
+generated/translated\00128.json, {'op': '15 FF', 'offset': 14225, 'index': 3649, 'value': ['u32:17557', 'u32:66858']} 指向不存在的 offset: 66858
+generated/translated\00128.json, {'op': '11 FF', 'offset': 14304, 'index': 3681, 'value': ['u32:656642']} 指向不存在的 offset: 656642
